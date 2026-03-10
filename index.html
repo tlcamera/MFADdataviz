@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thesis Visualization Guide</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Entrepreneurial Thesis Toolkit</p>
+          <h1>Find the right data visualization for the story your project needs to tell.</h1>
+          <p class="lede">
+            Compare strategic visualization frameworks, study what each one does best, and
+            answer guided questions to produce a usable plan for your thesis graphic.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#visualization-grid">Browse frameworks</a>
+            <a class="button button-secondary" href="#builder">Jump to builder</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <p class="panel-label">How it works</p>
+          <ol class="panel-steps">
+            <li>Review five visualization types used in design strategy.</li>
+            <li>Choose the framework that best fits your market story.</li>
+            <li>Answer prompts about your thesis, evidence, and differentiators.</li>
+            <li>Leave with a draft rationale and a build checklist.</li>
+          </ol>
+        </aside>
+      </section>
+
+      <section class="section" id="visualization-grid">
+        <div class="section-heading">
+          <p class="eyebrow">Step 1</p>
+          <h2>Choose your visualization framework</h2>
+          <p>
+            Each card includes a plain-language description, a visual example, and the kind of
+            thesis argument it supports best.
+          </p>
+        </div>
+        <div class="card-grid" id="frameworkCards"></div>
+      </section>
+
+      <section class="section builder" id="builder">
+        <div class="section-heading">
+          <p class="eyebrow">Step 2</p>
+          <h2>Build your thesis visualization brief</h2>
+          <p>
+            Pick one framework above. The prompts below update automatically to guide your next
+            draft.
+          </p>
+        </div>
+
+        <div class="builder-layout">
+          <section class="builder-panel selection-panel">
+            <div class="selection-header">
+              <p class="panel-label">Selected framework</p>
+              <div id="selectedBadge" class="selected-badge">Choose one above</div>
+            </div>
+            <div id="selectionState" class="selection-state empty">
+              Select a visualization card to see when to use it and unlock the guided builder.
+            </div>
+            <div id="selectedExample" class="example-frame muted"></div>
+          </section>
+
+          <section class="builder-panel form-panel">
+            <form id="briefForm">
+              <div class="field">
+                <label for="projectName">Project name</label>
+                <input id="projectName" name="projectName" type="text" placeholder="ex. ReThread" />
+              </div>
+
+              <div class="field">
+                <label for="thesisSummary">Describe your entrepreneurial thesis</label>
+                <textarea
+                  id="thesisSummary"
+                  name="thesisSummary"
+                  rows="4"
+                  placeholder="What problem are you addressing, for whom, and what is your idea?"
+                ></textarea>
+              </div>
+
+              <div class="field">
+                <label for="audience">Who needs to understand this visualization?</label>
+                <input
+                  id="audience"
+                  name="audience"
+                  type="text"
+                  placeholder="ex. faculty reviewers, peers, investors, community partners"
+                />
+              </div>
+
+              <div class="field">
+                <label for="competitors">What people, organizations, or alternatives should appear?</label>
+                <textarea
+                  id="competitors"
+                  name="competitors"
+                  rows="3"
+                  placeholder="List competitors, peer projects, systems, actors, or references."
+                ></textarea>
+              </div>
+
+              <div class="field">
+                <label for="dimensions">What dimensions, factors, or relationships matter most?</label>
+                <textarea
+                  id="dimensions"
+                  name="dimensions"
+                  rows="3"
+                  placeholder="ex. affordability, sustainability, trust, access, distribution, stakeholder influence"
+                ></textarea>
+              </div>
+
+              <div class="field">
+                <label for="evidence">What evidence or research will support the visualization?</label>
+                <textarea
+                  id="evidence"
+                  name="evidence"
+                  rows="3"
+                  placeholder="User interviews, survey data, market reports, observations, secondary research."
+                ></textarea>
+              </div>
+
+              <div class="field">
+                <label for="standout">
+                  Write 2–3 sentences explaining why this visualization is the best way to show your
+                  research, what insight it reveals, and how your project stands out.
+                </label>
+                <textarea
+                  id="standout"
+                  name="standout"
+                  rows="5"
+                  placeholder="Explain the choice, the insight, and the distinction."
+                ></textarea>
+              </div>
+            </form>
+          </section>
+
+          <section class="builder-panel output-panel">
+            <p class="panel-label">Live thesis brief</p>
+            <div id="briefOutput" class="brief-output empty">
+              Choose a framework and begin answering prompts to generate your visualization brief.
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
