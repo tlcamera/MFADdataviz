@@ -135,6 +135,17 @@
                   placeholder="Explain the choice, the insight, and the distinction."
                 ></textarea>
               </div>
+
+              <section id="followupSection" class="followup-section">
+                <div class="followup-heading">
+                  <p class="panel-label">Framework-specific follow-up</p>
+                  <p id="followupIntro" class="followup-copy">
+                    Choose a framework above to unlock the extra questions needed to draft the actual
+                    visualization.
+                  </p>
+                </div>
+                <div id="followupFields"></div>
+              </section>
             </form>
           </section>
 
@@ -142,6 +153,9 @@
             <p class="panel-label">Live thesis brief</p>
             <div id="briefOutput" class="brief-output empty">
               Choose a framework and begin answering prompts to generate your visualization brief.
+            </div>
+            <div id="visualizationOutput" class="visualization-output empty">
+              Your drafted visualization will appear here after you choose a framework.
             </div>
           </section>
         </div>

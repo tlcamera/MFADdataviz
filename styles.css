@@ -307,6 +307,33 @@ li {
   margin-top: 16px;
 }
 
+.followup-section {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(31, 37, 51, 0.1);
+}
+
+.followup-heading {
+  margin-bottom: 14px;
+}
+
+.followup-copy {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.followup-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.field-hint {
+  margin: 8px 0 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
 label {
   display: block;
   margin-bottom: 8px;
@@ -340,6 +367,55 @@ textarea:focus {
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.64);
   border: 1px solid rgba(31, 37, 51, 0.08);
+}
+
+.visualization-output {
+  margin-top: 16px;
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.64);
+  border: 1px solid rgba(31, 37, 51, 0.08);
+}
+
+.visualization-output.empty {
+  color: var(--muted);
+  opacity: 0.8;
+}
+
+.visualization-output h4 {
+  margin: 0 0 12px;
+  color: var(--accent-deep);
+}
+
+.visualization-output p {
+  margin: 0 0 12px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.visualization-stage {
+  min-height: 340px;
+  border-radius: 22px;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(239, 229, 214, 0.92)),
+    var(--bg-alt);
+  border: 1px solid rgba(31, 37, 51, 0.08);
+}
+
+.visualization-stage svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.missing-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.missing-list li + li {
+  margin-top: 6px;
 }
 
 .brief-output h3,
